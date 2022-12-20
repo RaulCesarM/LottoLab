@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Nova pasta (2)\\Src\\LotoCharts.Domain\\LotoCharts.Domain.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\LotoCharts\\Src\\LotoCharts.Domain\\LotoCharts.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Nova pasta (2)\\Src\\LotoCharts.Domain\\LotoCharts.Domain.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\LotoCharts\\Src\\LotoCharts.Domain\\LotoCharts.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Nova pasta (2)\\Src\\LotoCharts.Domain\\LotoCharts.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\LotoCharts\\Src\\LotoCharts.Domain\\LotoCharts.Domain.csproj",
         "projectName": "LotoCharts.Domain",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Nova pasta (2)\\Src\\LotoCharts.Domain\\LotoCharts.Domain.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\LotoCharts\\Src\\LotoCharts.Domain\\LotoCharts.Domain.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Nova pasta (2)\\Src\\LotoCharts.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\LotoCharts\\Src\\LotoCharts.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
