@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace LotoCharts.Domain.Entities.Models
 {
-    public class Sorteio
+    public class LotoFacil
     {
      
         public int Id { get;internal set; }
@@ -50,12 +50,12 @@ namespace LotoCharts.Domain.Entities.Models
         public int Casa_15 { get; set; }
 
 
-        public Sorteio()
+        public LotoFacil()
         {
 
         }
 
-        public Sorteio(SorteioDTO dto)
+        public LotoFacil(LotoFacilDTO dto)
         {
             Concurso = dto.Concurso;
             Data =    dto.Data;
@@ -76,7 +76,7 @@ namespace LotoCharts.Domain.Entities.Models
             Casa_15 = dto.Casa_15;
         }
 
-        public Sorteio(int concurso, string data, int casa_01, int casa_02, int casa_03, int casa_04, int casa_05, int casa_06, int casa_07, int casa_08, int casa_09, int casa_10, int casa_11, int casa_12, int casa_13, int casa_14, int casa_15)
+        public LotoFacil(int concurso, string data, int casa_01, int casa_02, int casa_03, int casa_04, int casa_05, int casa_06, int casa_07, int casa_08, int casa_09, int casa_10, int casa_11, int casa_12, int casa_13, int casa_14, int casa_15)
         {
             Concurso= concurso;
             Data    = data;

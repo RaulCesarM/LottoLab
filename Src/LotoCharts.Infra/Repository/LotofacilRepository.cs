@@ -5,7 +5,7 @@ using LotoCharts.Infra.Context;
 
 namespace LotoCharts.Infra.Repository
 {
-    public class LotofacilRepository : BaseGenericCrudRepository<Sorteio, int>, ILotoFacilRepository
+    public class LotofacilRepository : BaseGenericCrudRepository<LotoFacil, int>, ILotoFacilRepository
     {
         private readonly LotoChartsContext _context;
         public LotofacilRepository(LotoChartsContext context) : base(context)
@@ -13,10 +13,6 @@ namespace LotoCharts.Infra.Repository
             _context = context;
         }
 
-        public void SalvarSorteio(Sorteio entity)
-        {
-            _context.Set<Sorteio>().Add(entity);
-            _context.SaveChanges();
-        }
+      
     }
 }

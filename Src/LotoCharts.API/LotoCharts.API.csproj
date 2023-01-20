@@ -9,6 +9,8 @@
    <ItemGroup>
     <ProjectReference Include="..\LotoCharts.Domain\LotoCharts.Domain.csproj" />
     <ProjectReference Include="..\LotoCharts.Di\LotoCharts.Di.csproj" />
+   
+   
   </ItemGroup>
 
   <ItemGroup>

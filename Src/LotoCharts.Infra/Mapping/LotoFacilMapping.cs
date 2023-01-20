@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace LotoCharts.Infra.Mapping
 {
-    public class LotoFacilMapping : IEntityTypeConfiguration<Sorteio>
+    public class LotoFacilMapping : IEntityTypeConfiguration<LotoFacil>
     {
-        public void Configure(EntityTypeBuilder<Sorteio> builder)
+        public void Configure(EntityTypeBuilder<LotoFacil> builder)
         {
             builder.ToTable("LotoFacil");
 

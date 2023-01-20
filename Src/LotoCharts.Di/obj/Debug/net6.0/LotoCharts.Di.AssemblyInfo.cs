@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("LotoCharts.DI")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("LotoCharts.Di")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("LotoCharts.DI")]
-[assembly: System.Reflection.AssemblyTitleAttribute("LotoCharts.DI")]
+[assembly: System.Reflection.AssemblyProductAttribute("LotoCharts.Di")]
+[assembly: System.Reflection.AssemblyTitleAttribute("LotoCharts.Di")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
