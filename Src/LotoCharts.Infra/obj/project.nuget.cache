@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "o3CXPELbzhMDpmPSOVMSGdZb9sYsvh58e96geFX/AmUjVENYdaPMX4y4njxvyzlo+8vhMzNeAnlOp12hblQGeg==",
+  "dgSpecHash": "TwUppUv4cjg2+njTJq2BTJiWzOTipRNn9bfL1pACLcsPDBQNXPPVT5/V5w5ehMjHrt7yYmz20G+VDaxNkY3WUg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Desktop\\LotoCharts\\Src\\LotoCharts.Infra\\LotoCharts.Infra.csproj",
   "expectedPackageFiles": [
@@ -78,7 +78,10 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
+    "C:\\Users\\Usuario\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.12\\microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.12\\microsoft.windowsdesktop.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.12\\microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512"
   ],
   "logs": []
 }

@@ -8,7 +8,7 @@ namespace LotoCharts.Infra.Context
 {
     public class LotoChartsContext : DbContext
     {
-        public DbSet<Sorteio> Sorteios { get; set; }
+        public DbSet<LotoFacil> Sorteios { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             IConfigurationRoot configuration = new ConfigurationBuilder()

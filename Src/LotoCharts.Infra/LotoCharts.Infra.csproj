@@ -8,6 +8,7 @@
 
    <ItemGroup>
     <ProjectReference Include="..\LotoCharts.Domain\LotoCharts.Domain.csproj" />       
+    
   </ItemGroup>
 
   <ItemGroup>

@@ -25,25 +25,46 @@ namespace LotoCharts.Infra.Repository
             _context.SaveChanges();
         }
 
+        public virtual void Remove(TEntity entity)
+        {
+            _context.Set<TEntity>().Remove(entity);
+            _context.SaveChanges();
+        }
+
+
+
+/// ///////////////////////////////////////////
+
+ 
+        public virtual IList<TEntity> GetAll(Pagination pagination)
+        {
+            return _context.Set<TEntity>()
+                           .Take(pagination.Take)
+                           .Skip(pagination.Skip)
+                           .ToList();
+        }
         public virtual TEntity GetById(Tkey id)
         {
             return _context.Set<TEntity>().Find(id);
         }
 
 
-
-        public virtual IList<TEntity> GetAll(Pagination pagination)
+        public virtual TEntity GetFirst()
         {
-            return _context.Set<TEntity>()
-                            .Take(pagination.Take)
-                            .Skip(pagination.Skip)
-                            .ToList();
+            var first = _context.Set<TEntity>()
+                                .FirstOrDefault();
+            return first;
         }
 
-        public virtual void Remove(TEntity entity)
+        public virtual TEntity GetLast()
         {
-            _context.Set<TEntity>().Remove(entity);
-            _context.SaveChanges();
+            
+            var latest = _context.Set<TEntity>()
+                                 .OrderBy(x => x)
+                                 .LastOrDefault();
+           
+            return latest;
+
         }
     }
 }

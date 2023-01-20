@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace LotoCharts.Domain.Entities.Models
 {
-    public class SorteioDTO
+    public class LotoFacilDTO
     {
         public int Id { get; internal set; }
 
@@ -48,34 +48,34 @@ namespace LotoCharts.Domain.Entities.Models
 
 
 
-        public SorteioDTO()
+        public LotoFacilDTO()
         {
 
         }
 
-        public SorteioDTO(Sorteio dto)
+        public LotoFacilDTO(LotoFacil entity)
         {
-            Concurso = dto.Concurso;
-            Data = dto.Data;
-            Casa_01 = dto.Casa_01;
-            Casa_02 = dto.Casa_02;
-            Casa_03 = dto.Casa_03;
-            Casa_04 = dto.Casa_04;
-            Casa_05 = dto.Casa_05;
-            Casa_06 = dto.Casa_06;
-            Casa_07 = dto.Casa_07;
-            Casa_08 = dto.Casa_08;
-            Casa_09 = dto.Casa_09;
-            Casa_10 = dto.Casa_10;
-            Casa_11 = dto.Casa_11;
-            Casa_12 = dto.Casa_12;
-            Casa_13 = dto.Casa_13;
-            Casa_14 = dto.Casa_14;
-            Casa_15 = dto.Casa_15;
+            Concurso = entity.Concurso;
+            Data = entity.Data;
+            Casa_01 = entity.Casa_01;
+            Casa_02 = entity.Casa_02;
+            Casa_03 = entity.Casa_03;
+            Casa_04 = entity.Casa_04;
+            Casa_05 = entity.Casa_05;
+            Casa_06 = entity.Casa_06;
+            Casa_07 = entity.Casa_07;
+            Casa_08 = entity.Casa_08;
+            Casa_09 = entity.Casa_09;
+            Casa_10 = entity.Casa_10;
+            Casa_11 = entity.Casa_11;
+            Casa_12 = entity.Casa_12;
+            Casa_13 = entity.Casa_13;
+            Casa_14 = entity.Casa_14;
+            Casa_15 = entity.Casa_15;
         }
 
 
-        public SorteioDTO(int concurso, string data, int casa_01, int casa_02, int casa_03, int casa_04, int casa_05,int casa_06,int casa_07, int casa_08,int casa_09,int casa_10,int casa_11,int casa_12, int casa_13,int casa_14,int casa_15)
+        public LotoFacilDTO(int concurso, string data, int casa_01, int casa_02, int casa_03, int casa_04, int casa_05,int casa_06,int casa_07, int casa_08,int casa_09,int casa_10,int casa_11,int casa_12, int casa_13,int casa_14,int casa_15)
         {
             Concurso = concurso;
             Data = data;

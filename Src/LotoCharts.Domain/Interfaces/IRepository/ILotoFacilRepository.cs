@@ -5,7 +5,7 @@ using LotoCharts.Domain.Interfaces.IBases;
 
 namespace LotoCharts.Domain.Interfaces.IRepository
 {
-    public interface ILotoFacilRepository : IBaseRepository<Sorteio, int>
+    public interface ILotoFacilRepository : IBaseRepository<LotoFacil, int>
     {
       
        
