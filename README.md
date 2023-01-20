@@ -39,7 +39,7 @@ Graficos das luas ( Numeros que mais caeem na lua cheia) <br>
 Graficos das luas ( Numeros que mais caeem na lua nova) <br>
 Graficos das luas ( Numeros que mais caeem na lua minguante) <br>
 Graficos das luas ( Numeros que mais caeem na lua crescente) <br>
-Geração de combinaçãoes usando um padrão de encontrei anos atras oque me me levou a estudadar programação. <br>
+Geração de combinaçãoes usando um padrão ja detectado porem ainda sem recurso para aplicação <br>
 
 
 
@@ -55,7 +55,7 @@ Fiz este sisteminha um tempo atraz hoje pretendo replicar de forma WEB e de form
 
    <tr>
     <td> <img src="https://user-images.githubusercontent.com/37316110/213824107-24b6f411-92dd-45fe-8b7a-85ef02994a0f.png" width="350"/> </td>
-    <td> <img src="https://user-images.githubusercontent.com/37316110/213824606-4a6071a9-9868-4de4-84fe-2486e9c9945f.png" width="350"/></td>
+    <td> <img src="https://user-images.githubusercontent.com/37316110/213824606-4a6071a9-9868-4de4-84fe-2486e9c9945f.png" width="350" height="170" /></td>
     <td> <img src="https://user-images.githubusercontent.com/37316110/213824718-e3062871-aab6-49d9-abaf-c7c62818f6d3.png" width="350"/></td>  
   </tr
 
