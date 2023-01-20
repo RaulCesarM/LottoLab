@@ -51,7 +51,7 @@ Fiz este sisteminha um tempo atraz hoje pretendo replicar de forma WEB e de form
 
 
 
-
+<table style="width:100%" align="center">
 
    <tr>
     <td> <img src="https://user-images.githubusercontent.com/37316110/213824107-24b6f411-92dd-45fe-8b7a-85ef02994a0f.png" width="350"/> </td>
@@ -60,7 +60,7 @@ Fiz este sisteminha um tempo atraz hoje pretendo replicar de forma WEB e de form
   </tr
 
 
-
+</table>
 
 
 
