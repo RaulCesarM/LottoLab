@@ -4,8 +4,8 @@ O projeto LotoCharts ainda esta fase inicial.
 # Objetivos :
 
 # Objetivos do BackEnd: <br>
-Contruir uma API em C# com .net core e hospedar na nuvem Azure, <br>
-Dispondo dos mais refinados conceitos de Organização de codigo e legibilidade estabelicidos pelo SOLID, <br>
+Construir uma API em C# com .net core e hospedar na nuvem Azure, <br>
+Dispondo dos mais refinados conceitos de organização de codigo e legibilidade estabelicidos pelo SOLID, <br>
 Usando banco de dados SQLServer, <br>
 Entity Framework como ORM para conecção com banco, <br>
 Validações usando Fluent validations, <br>
@@ -14,7 +14,7 @@ A API construida em camadas, atendendo os padrões RestFull (Uniform interface, 
 Testes serão feitos com Nunit... <br>
 
 # Objetivos do frontEnd: <br>
-Contruir o consumo usando Angular em sua versão mais recente, <br>
+Construir o consumo da PAI no front usando Angular em sua versão mais recente, <br>
 De forma a atender as funcionalidades dispostas no proximo topico, <br>
 Com o enriquecimento das leituras das informações, usando Dashboards avançados com biblioteca como Charts.js <br>
 As funcionalidades serão separadas em componentes para que o uso seja sob demanda descrito pelo conceito de paginas SPA, <br>
@@ -45,6 +45,22 @@ Geração de combinaçãoes usando um padrão de encontrei anos atras oque me me
 
 Fiz este sisteminha um tempo atraz hoje pretendo replicar de forma WEB e de forma muito mais aprimorada! <br>
 ![image](https://user-images.githubusercontent.com/37316110/213823284-734eee30-03a7-452f-9eb6-33f8cde96b0e.png)
+
+# Inspirações para design <br>
+
+
+
+
+
+
+   <tr>
+    <td> <img src="https://user-images.githubusercontent.com/37316110/213824107-24b6f411-92dd-45fe-8b7a-85ef02994a0f.png" width="350"/> </td>
+    <td> <img src="https://user-images.githubusercontent.com/37316110/213824606-4a6071a9-9868-4de4-84fe-2486e9c9945f.png" width="350"/></td>
+    <td> <img src="https://user-images.githubusercontent.com/37316110/213824718-e3062871-aab6-49d9-abaf-c7c62818f6d3.png" width="350"/></td>  
+  </tr
+
+
+
 
 
 
