@@ -10,7 +10,8 @@ Usando banco de dados SQLServer, <br>
 Entity Framework como ORM para conecção com banco, <br>
 Validações usando Fluent validations, <br>
 Usar Docker para faser as imagens, <br>
-A API construida em camadas, atendendo os padrões RestFull (Uniform interface, Stateless, Cacheable, Client-Server, Layered system, Code on demand) <br>
+A API construida em camadas, (API,DI, Domain,Infra, Tests, Services, IA) <br>
+Atendendo os padrões RestFull (Uniform interface, Stateless, Cacheable, Client-Server, Layered system, Code on demand) <br>
 Testes serão feitos com Nunit... <br>
 
 # Objetivos do frontEnd: <br>
