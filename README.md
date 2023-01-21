@@ -43,7 +43,7 @@ Geração de combinaçãoes usando um padrão ja detectado porem ainda sem recur
 
 
 
-Fiz este sisteminha um tempo atraz hoje pretendo replicar de forma WEB e de forma muito mais aprimorada! <br>
+Fiz este sisteminha um tempo atrás, hoje pretendo replicar de forma WEB e de forma muito mais aprimorada! <br>
 ![image](https://user-images.githubusercontent.com/37316110/213823284-734eee30-03a7-452f-9eb6-33f8cde96b0e.png)
 
 # Inspirações para design <br>
