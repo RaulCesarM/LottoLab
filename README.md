@@ -14,7 +14,7 @@ A API construida em camadas, atendendo os padrões RestFull (Uniform interface, 
 Testes serão feitos com Nunit... <br>
 
 # Objetivos do frontEnd: <br>
-Construir o consumo da PAI no front usando Angular em sua versão mais recente, <br>
+Construir o consumo da API no front usando Angular em sua versão mais recente, <br>
 De forma a atender as funcionalidades dispostas no proximo topico, <br>
 Com o enriquecimento das leituras das informações, usando Dashboards avançados com biblioteca como Charts.js <br>
 As funcionalidades serão separadas em componentes para que o uso seja sob demanda descrito pelo conceito de paginas SPA, <br>
