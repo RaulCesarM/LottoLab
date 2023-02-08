@@ -1,6 +1,7 @@
 
 
 using System.Threading;
+using External.Domain.Entities.Enums;
 using External.Domain.Entities.Models;
 using External.Domain.Interfaces.IServices;
 using Microsoft.AspNetCore.Mvc;
@@ -27,7 +28,7 @@ namespace External.API.Controllers
             {
                 var cancellationTokenSource = new CancellationTokenSource();
                 cancellationTokenSource.Cancel(false);
-                var final = await _FeedService.CheckLast();
+                var final = await _FeedService.CheckLast();               
                 return final;
 
             }

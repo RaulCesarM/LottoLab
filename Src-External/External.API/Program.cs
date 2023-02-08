@@ -1,15 +1,13 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using External.API.Controllers;
+using External.API.Quartz;
 using External.Di.IOC;
 using External.Infra.Context;
-
 using Microsoft.AspNetCore.Mvc.Formatters;
-
-
+using Quartz;
 var builder = WebApplication.CreateBuilder(args);
-
 RepositoryIOC.RegisterServices(builder.Services);
-
 builder.Services.AddControllers()
                 .AddJsonOptions(options =>
                   {
@@ -22,9 +20,8 @@ builder.Services.AddControllers()
 
 
 
-
+                
 builder.Services.AddEndpointsApiExplorer();
-
 builder.Services.AddSwaggerGen();
 builder.Services.AddMvc(config =>
 {
@@ -34,8 +31,6 @@ builder.Services.AddMvc(config =>
 });
 builder.Services.AddDbContext<LotoChartsContext>();
 var app = builder.Build();
-
-
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

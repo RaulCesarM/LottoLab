@@ -8,7 +8,9 @@ namespace External.Infra.Context
 {
     public class LotoChartsContext : DbContext
     {
-        public DbSet<LotoFacil> Sorteios { get; set; }
+        public DbSet<LotoFacil> LotoFacils { get; set; }
+        public DbSet<MegaSena> MegaSenas { get; set; }
+        public DbSet<Quina> Quinas { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             IConfigurationRoot configuration = new ConfigurationBuilder()
@@ -21,6 +23,8 @@ namespace External.Infra.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new LotoFacilMapping());
+            modelBuilder.ApplyConfiguration(new MegaSenaMapping());
+            modelBuilder.ApplyConfiguration(new QuinaMapping());
         }
 
     }

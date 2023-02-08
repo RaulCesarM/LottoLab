@@ -1,8 +1,6 @@
-
 using External.Domain.Entities.Models;
 using External.Domain.Interfaces.IRepository;
 using External.Infra.Context;
-
 namespace External.Infra.Repository
 {
     public class LotofacilRepository : BaseGenericCrudRepository<LotoFacil, int>, ILotoFacilRepository
@@ -12,6 +10,5 @@ namespace External.Infra.Repository
         {
             _context = context;
         }
-
     }
 }

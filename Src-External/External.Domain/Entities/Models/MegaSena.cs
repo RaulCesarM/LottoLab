@@ -5,21 +5,21 @@ namespace External.Domain.Entities.Models
     public class MegaSena
     {
         public int Id { get; internal set; }
-        [JsonProperty("numero")]
+        
         public int Concurso { get; set; }
-        [JsonProperty("dataApuracao")]
+        
         public string Data { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[0]")]
+        
         public int Casa_01 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[1]")]
+        
         public int Casa_02 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[2]")]
+        
         public int Casa_03 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[3]")]
+        
         public int Casa_04 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[4]")]
+        
         public int Casa_05 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[5]")]
+        
         public int Casa_06 { get; set; }
         public MegaSena()
         {

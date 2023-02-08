@@ -1,39 +1,27 @@
-
 using External.Domain.Entities.DTOs;
 using Newtonsoft.Json;
-
 namespace External.Domain.Entities.Models
 {
     public class Quina
     {
         public int Id { get; internal set; }
-
-
-        [JsonProperty("numero")]
+       
         public int Concurso { get; set; }
-
-        [JsonProperty("dataApuracao")]
+    
         public string Data { get; set; }
-
-        [JsonProperty("dezenasSorteadasOrdemSorteio[0]")]
+     
         public int Casa_01 { get; set; }
-
-        [JsonProperty("dezenasSorteadasOrdemSorteio[1]")]
+     
         public int Casa_02 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[2]")]
+     
         public int Casa_03 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[3]")]
+      
         public int Casa_04 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[4]")]
+     
         public int Casa_05 { get; set; }
-
-
-
         public Quina()
         {
-
         }
-
         public Quina(QuinaDTO entity)
         {
             Concurso = entity.Concurso;
@@ -43,10 +31,7 @@ namespace External.Domain.Entities.Models
             Casa_03 = entity.Casa_03;
             Casa_04 = entity.Casa_04;
             Casa_05 = entity.Casa_05;
-
         }
-
-
         public Quina(int concurso, string data, int casa_01, int casa_02, int casa_03, int casa_04, int casa_05)
         {
             Concurso = concurso;
@@ -56,8 +41,6 @@ namespace External.Domain.Entities.Models
             Casa_03 = casa_03;
             Casa_04 = casa_04;
             Casa_05 = casa_05;
-
-
         }
     }
 }

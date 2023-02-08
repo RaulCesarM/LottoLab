@@ -21,7 +21,7 @@ namespace External.Infra.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("External.Domain.Entities.Models.Sorteio", b =>
+            modelBuilder.Entity("External.Domain.Entities.Models.LotoFacil", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -99,6 +99,90 @@ namespace External.Infra.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("LotoFacil", (string)null);
+                });
+
+            modelBuilder.Entity("External.Domain.Entities.Models.MegaSena", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Casa_01")
+                        .HasMaxLength(2)
+                        .HasColumnType("int");
+
+                    b.Property<int>("Casa_02")
+                        .HasMaxLength(2)
+                        .HasColumnType("int");
+
+                    b.Property<int>("Casa_03")
+                        .HasMaxLength(2)
+                        .HasColumnType("int");
+
+                    b.Property<int>("Casa_04")
+                        .HasMaxLength(2)
+                        .HasColumnType("int");
+
+                    b.Property<int>("Casa_05")
+                        .HasMaxLength(2)
+                        .HasColumnType("int");
+
+                    b.Property<int>("Casa_06")
+                        .HasMaxLength(2)
+                        .HasColumnType("int");
+
+                    b.Property<int>("Concurso")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Data")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MegaSena", (string)null);
+                });
+
+            modelBuilder.Entity("External.Domain.Entities.Models.Quina", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Casa_01")
+                        .HasMaxLength(2)
+                        .HasColumnType("int");
+
+                    b.Property<int>("Casa_02")
+                        .HasMaxLength(2)
+                        .HasColumnType("int");
+
+                    b.Property<int>("Casa_03")
+                        .HasMaxLength(2)
+                        .HasColumnType("int");
+
+                    b.Property<int>("Casa_04")
+                        .HasMaxLength(2)
+                        .HasColumnType("int");
+
+                    b.Property<int>("Casa_05")
+                        .HasMaxLength(2)
+                        .HasColumnType("int");
+
+                    b.Property<int>("Concurso")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Data")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Quina", (string)null);
                 });
 #pragma warning restore 612, 618
         }

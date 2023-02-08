@@ -1,5 +1,3 @@
-
-
 namespace External.Domain.Interfaces.IBases
 {
     public interface IBaseService<TEntity, Tkey> where TEntity : class

@@ -1,4 +1,3 @@
-
 namespace External.Domain.Interfaces.IBases
 {
     public interface IBaseRepository<TEntity, Tkey> where TEntity : class

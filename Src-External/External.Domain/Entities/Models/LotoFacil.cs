@@ -5,39 +5,22 @@ namespace External.Domain.Entities.Models
     public class LotoFacil
     {
         public int Id { get; internal set; }
-        [JsonProperty("numero")]
         public int Concurso { get; set; }
-        [JsonProperty("dataApuracao")]
         public string Data { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[0]")]
         public int Casa_01 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[1]")]
         public int Casa_02 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[2]")]
         public int Casa_03 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[3]")]
         public int Casa_04 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[4]")]
         public int Casa_05 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[5]")]
         public int Casa_06 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[6]")]
         public int Casa_07 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[7]")]
         public int Casa_08 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[8]")]
         public int Casa_09 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[9]")]
         public int Casa_10 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[10]")]
         public int Casa_11 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[11]")]
         public int Casa_12 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[12]")]
         public int Casa_13 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[13]")]
         public int Casa_14 { get; set; }
-        [JsonProperty("dezenasSorteadasOrdemSorteio[14]")]
         public int Casa_15 { get; set; }
         public LotoFacil()
         {

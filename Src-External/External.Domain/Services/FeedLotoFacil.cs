@@ -1,53 +1,51 @@
-
-
 using External.Domain.Entities.DTOs;
 using External.Domain.Interfaces.IRepository;
 using External.Domain.Interfaces.IServices;
 using Newtonsoft.Json;
-
 namespace External.Domain.Services
 {
-    public class FeedBusService : ILotoFacilFeedService
+    public class FeedLotoFacil : ILotoFacilFeedService
     {
-
         private readonly ILotoFacilService _lotoService;
         private readonly ILotoFacilRepository _lotoRepository;
         private readonly String URL = "https://servicebus2.caixa.gov.br/portaldeloterias/api/lotofacil";
-        static readonly HttpClient Client = new HttpClient
+                static readonly HttpClient Client = new HttpClient
         {
             MaxResponseContentBufferSize = 1_000_000
         };
-        public FeedBusService(ILotoFacilRepository lotoRepository, ILotoFacilService lotoService)
+        public FeedLotoFacil(ILotoFacilRepository lotoRepository, ILotoFacilService lotoService)
         {
             _lotoRepository = lotoRepository;
             _lotoService = lotoService;
         }
 
-
         public async Task<int> CheckLast()
         {
-            var DB = _lotoRepository.GetLast();
-            var Last_db = DB.Concurso;
-            string LastResult = await Client.GetStringAsync(URL);
-            dynamic LastObj = JsonConvert.DeserializeObject(LastResult);
+            if(_lotoRepository.GetLast() == null){
 
-            int Last_C = LastObj.numero;
-            if (Last_db == 0)
-            {
-                Last_db = 1;
-            }
-
-            while (Last_db < Last_C)
-            {
-                GetResult(Last_db).Wait(1000);
+                Update(1).Wait(1000);
+                return 1;
+            }else{
+                var DB = _lotoRepository.GetLast();
+                var Last_db = DB.Concurso;
                 Last_db++;
+                string LastResult = await Client.GetStringAsync(URL);
+                dynamic LastObj = JsonConvert.DeserializeObject(LastResult);
 
+                int Last_C = LastObj.numero;
+               
+                while (Last_db < Last_C)
+                {
+                    Update(Last_db).Wait(1000);
+                    Last_db++;
+
+                }
+                var result = _lotoRepository.GetLast();
+                return result.Concurso;
             }
-            var result = _lotoRepository.GetLast();
-            return result.Concurso;
+           
         }
-
-        public async Task GetResult(int Last_db)
+        public async Task<int> Update(int Last_db)
         {
             string Result = await Client.GetStringAsync(URL + "/" + Last_db);
             dynamic Obj = JsonConvert.DeserializeObject(Result);
@@ -70,6 +68,7 @@ namespace External.Domain.Services
             int casa_15 = Obj.dezenasSorteadasOrdemSorteio[14];
             var raffle = new LotoFacilDTO(concurso, data, casa_01, casa_02, casa_03, casa_04, casa_05, casa_06, casa_07, casa_08, casa_09, casa_10, casa_11, casa_12, casa_13, casa_14, casa_15);
             _lotoService.Insert(raffle);
+            return raffle.Concurso;
         }
     }
 }

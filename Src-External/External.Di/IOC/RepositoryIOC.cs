@@ -12,7 +12,7 @@ namespace External.Di.IOC
         {
             builder.AddScoped<ILotoFacilRepository, LotofacilRepository>();
             builder.AddScoped<ILotoFacilService, LotoFacilServices>();
-            builder.AddScoped<ILotoFacilFeedService, FeedBusService>();
+            builder.AddScoped<ILotoFacilFeedService, FeedLotoFacil>();
         }
     }
 }

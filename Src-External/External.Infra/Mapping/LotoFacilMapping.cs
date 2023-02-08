@@ -1,7 +1,6 @@
 using External.Domain.Entities.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
 namespace External.Infra.Mapping
 {
     public class LotoFacilMapping : IEntityTypeConfiguration<LotoFacil>
@@ -9,9 +8,7 @@ namespace External.Infra.Mapping
         public void Configure(EntityTypeBuilder<LotoFacil> builder)
         {
             builder.ToTable("LotoFacil");
-
             builder.HasKey(L => L.Id);
-
             builder.Property(L => L.Concurso)
                    .HasColumnType("int");
             builder.Property(L => L.Data)
