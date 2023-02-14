@@ -1,36 +1,46 @@
-
-
-using System.Threading;
-using External.Domain.Entities.Enums;
-using External.Domain.Entities.Models;
+using External.API.Quartz;
 using External.Domain.Interfaces.IServices;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+using Quartz;
+using Quartz.Impl;
 
 namespace External.API.Controllers
 {
-    [ApiController]
+  [ApiController]
     [Route("API/Seed")]
     public class SeedController : ControllerBase
     {
-        private readonly ILotoFacilService _lotoService;
-        private readonly ILotoFacilFeedService _FeedService;
-        public SeedController(ILotoFacilService lotoService, ILotoFacilFeedService FeedService)
+        private readonly IScheduler _scheduler;
+        private readonly ILotoFacilFeedService _feedService;
+
+        public SeedController(ILotoFacilFeedService feedService)
         {
-            _lotoService = lotoService;
-            _FeedService = FeedService;
+            _feedService = feedService;
+            _scheduler = new StdSchedulerFactory().GetScheduler().Result;
+            _scheduler.Start();
+            ScheduleJob();
+        }
+
+        private void ScheduleJob()
+        {
+            var job = JobBuilder.Create<FeedJob>()
+                .WithIdentity("LotoFacilFeedJob")
+                .Build();
+
+            var trigger = TriggerBuilder.Create()
+                .WithIdentity("LotoFacilFeedTrigger")
+                .WithCronSchedule("*/2 * * * * ?") // agendar a cada 5 minutos
+                .Build();
+
+            _scheduler.ScheduleJob(job, trigger);
         }
 
         [HttpPost]
-        public async Task<int> Consumption()
+        public async Task Consumption()
         {
             try
             {
-                var cancellationTokenSource = new CancellationTokenSource();
-                cancellationTokenSource.Cancel(false);
-                var final = await _FeedService.CheckLast();               
-                return final;
-
+                await _feedService.CheckLast();
             }
             catch (Exception e)
             {
@@ -38,5 +48,6 @@ namespace External.API.Controllers
             }
         }
 
+       
     }
 }
