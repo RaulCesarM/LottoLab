@@ -1,5 +1,5 @@
-# LotoCharts
-O projeto LotoCharts ainda esta fase inicial.
+# LottoLab
+O projeto LottoLab ainda esta fase inicial.
 
 # Objetivos :
 
