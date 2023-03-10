@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LottoLab.Application", "LottoLab.Application\LottoLab.Application.csproj", "{354C65F1-1AD6-4A48-8DD5-20CE54682447}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LottoLab.Domain", "LottoLab.Domain\LottoLab.Domain.csproj", "{6BB40420-6812-4646-9565-DF602D70D639}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LottoLab.Infra", "LottoLab.Infra\LottoLab.Infra.csproj", "{C3F97E86-5B61-42D9-92CA-533133B962A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoLab.DI", "LottoLab.DI\LottoLab.DI.csproj", "{F185B4BA-3D55-43CE-A006-CF63E462C31A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoLab.Email", "LottoLab.Lib.Email\LottoLab.Email.csproj", "{5857D6FD-86AC-4A47-A5EB-FCD95CEB5ED3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoLab.Worker", "LottoLab.Lib.Worker\LottoLab.Worker.csproj", "{7FB6DC88-9074-44E0-AE25-7C6602B08C31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{354C65F1-1AD6-4A48-8DD5-20CE54682447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{354C65F1-1AD6-4A48-8DD5-20CE54682447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{354C65F1-1AD6-4A48-8DD5-20CE54682447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{354C65F1-1AD6-4A48-8DD5-20CE54682447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BB40420-6812-4646-9565-DF602D70D639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BB40420-6812-4646-9565-DF602D70D639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BB40420-6812-4646-9565-DF602D70D639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BB40420-6812-4646-9565-DF602D70D639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F97E86-5B61-42D9-92CA-533133B962A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F97E86-5B61-42D9-92CA-533133B962A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F97E86-5B61-42D9-92CA-533133B962A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F97E86-5B61-42D9-92CA-533133B962A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F185B4BA-3D55-43CE-A006-CF63E462C31A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F185B4BA-3D55-43CE-A006-CF63E462C31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F185B4BA-3D55-43CE-A006-CF63E462C31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F185B4BA-3D55-43CE-A006-CF63E462C31A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5857D6FD-86AC-4A47-A5EB-FCD95CEB5ED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5857D6FD-86AC-4A47-A5EB-FCD95CEB5ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5857D6FD-86AC-4A47-A5EB-FCD95CEB5ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5857D6FD-86AC-4A47-A5EB-FCD95CEB5ED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FB6DC88-9074-44E0-AE25-7C6602B08C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB6DC88-9074-44E0-AE25-7C6602B08C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB6DC88-9074-44E0-AE25-7C6602B08C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB6DC88-9074-44E0-AE25-7C6602B08C31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {149C8CDC-A0A4-49D2-9838-75C4A2F5A31B}
+	EndGlobalSection
+EndGlobal

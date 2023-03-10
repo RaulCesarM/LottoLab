@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\LottoLab.Lib.Worker\LottoLab.Worker.csproj" />
+    <ProjectReference Include="..\LottoLab.Infra\LottoLab.Infra.csproj" />
+    <ProjectReference Include="..\LottoLab.Domain\LottoLab.Domain.csproj" />
+    <ProjectReference Include="..\LottoLab.DI\LottoLab.DI.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+   
+  </PropertyGroup>
+
+</Project>
